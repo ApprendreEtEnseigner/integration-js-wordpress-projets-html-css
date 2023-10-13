@@ -1,0 +1,9 @@
+La règle CSS `box-sizing: border-box;` est une propriété très utile qui permet de contrôler la façon dont la boîte d'un élément est calculée.
+
+En CSS, chaque élément est considéré comme une boîte et peut avoir des marges, des bordures et du padding. Par défaut, la taille d'un élément est calculée comme suit : `largeur + padding + bordure`. Cela signifie que si vous définissez une largeur de 200px pour un élément, puis ajoutez un padding de 10px et une bordure de 2px, la largeur totale de l'élément sera de 224px.
+
+Cependant, lorsque vous utilisez `box-sizing: border-box;`, la taille de l'élément comprend le padding et la bordure. Donc, si vous définissez une largeur de 200px pour un élément, puis ajoutez un padding de 10px et une bordure de 2px, la largeur totale de l'élément restera de 200px. Le padding et la bordure seront inclus dans cette largeur.
+
+Cela peut être très utile pour le contrôle du layout, en particulier lorsqu'il s'agit de responsive design. C'est pourquoi `box-sizing: border-box;` est souvent utilisé dans les feuilles de style CSS.
+
+
