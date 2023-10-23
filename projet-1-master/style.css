@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@300&family=Dancing+Script&family=Poppins&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Advent Pro', sans-serif;
     margin: 0;
@@ -148,4 +152,112 @@ header li a {
 }
 #vignoble {
     background: url("media/vignes.jpg");
+}
+
+#tourisme li {
+    margin: 65px 100px 0 100px;
+    height: 226px;
+    width: 55%;
+    max-width: 555px;
+    float: left;
+    box-shadow: 6px 6px 28px -1px rgba(0,0,0,0.75);
+}
+
+#tourisme p {
+    height: 45px;
+    width: 235px;
+    background-color: #01df74;
+    float: right;
+    margin: 50px -180px 0 0;  
+    font-size: 1.5em; 
+    text-align: center;
+    padding-top: 15px;
+    box-shadow: 4px 4px 0 1px rgba(90, 161, 43, 1);
+}
+
+#tourisme #chateau, #tourisme #vignoble {
+    float: right;
+}
+
+#chateau p, #vignoble p {
+    float: left;
+    background-color: cyan;
+    margin-left: -180px;
+    box-shadow: -4px 4px 0 1px rgba(15, 154, 156, 1);
+}
+
+
+/* ******************** FOOTER ******************************* */
+footer {
+    background: #524a3a;
+    color: #fffae1;
+    padding: 20px 0 10px 0;
+    text-align: center;
+}
+
+form {
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+input, textarea, button {
+    border: none;
+    width: 55%;
+    padding: 15px 10px;
+    margin: 1px 0;
+    font-size: 1.2em;
+    font-family: 'Advent Pro', sans-serif;
+    border-radius: 8px;
+}
+
+textarea {
+    height: 120px;
+}
+
+button{
+    font-size: 1.5em;
+    background-color: #fffae1;
+}
+
+button:hover {
+    background-color: #e55039;
+    color: #fffae1;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+#deuxiemeTrait {
+    height: 1px;
+    width: 75%;
+    margin: 60px auto;
+    background: #fffae1;
+}
+
+#copyrightEtIcons {
+    display: flex;
+    margin-bottom: 20px;
+    padding: 0 10%;
+}
+
+#copyright {
+    width: 50%;
+    text-align: left;
+    color: #fffae1;
+}
+
+#icons{
+    width: 50%;
+    text-align: right;
+}
+
+#icons a {
+    display: inline-block;
+    padding: 0 15px;
+    color: #fffae1;
+    font-size: 1.3em;
+}
+
+#icons a:hover {
+    transform: scale(1.5);
+    transition: 0.1s;
 }

@@ -1,0 +1,108 @@
+
+@import 'libs/reset.scss';
+
+$primary: green;
+
+body {
+    background: #70e7a2;
+    font-family: sans-serif;
+}
+
+//? ---------------- v3 Imbrication --------------
+// ne pas en abuser
+///!  se limier au niveau 2
+.table {
+    width: 100%;
+
+    th {
+        border: #000;
+
+        td {
+            color: yellow;
+        }
+    }
+}
+
+.btn {
+    color: blue;
+    &:hover {
+        color: aqua;
+    }
+}
+
+//? ---------------- v4 Heritage --------------
+// Principe: un selecteur va agir comme un autre selecteur
+// mot cle @extend
+
+.call-to-action {
+    @extend .btn;
+}
+
+//! %nom_selec => faux selecteur (ie: pas compile en css), usable avec @extend
+%btn {
+    padding: 5px 12px;
+    border: 5px solid #000;
+}
+
+.btn2 {
+    @extend %btn;
+    text-decoration: none;
+    padding: 5px 12px;
+    background: $primary;
+    color: aliceblue;
+
+    &:hover {
+        background: hsl(257, 69%, 25%);
+        
+
+    }
+}
+.btn-danger{
+    @extend .btn2;
+
+    background: red;
+    &:hover{
+     background:rgb(218, 142, 29)d;
+
+    }
+}
+
+.card {
+    padding: 20px;
+    margin: 10px;
+}
+.card-actions {
+    display: flex;
+}
+.card-action {
+    @extend .btn2;
+}
+
+.card-cancel {
+    @extend .btn-danger;
+}
+
+//? ---------------- v5 VARIABLES --------------
+// Principe: 
+// mot cle $nom_variable: valeurs
+
+//! On peut...
+// effectuer des operations 
+// ex: $primary: 10
+//     p {
+//         padding: $primary + 5px;
+//     }
+// creer un file avec vables paramtres puis use @import...
+
+//! Toujours...
+// declarer au debut
+
+
+
+
+
+
+
+
+
+
